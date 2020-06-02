@@ -1,0 +1,382 @@
+body {
+	background-color: #e18181;
+	margin: 0;
+	font-family: 'Baloo Bhaina 2', cursive;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Lexend Giga', sans-serif;
+	font-size: 15px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+p{
+	margin: 0 0 10px;
+}
+
+/* Container
+===========*/
+.container {
+	width: 100%;
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+/* header
+===========*/
+.header {
+	width: 100%;
+	padding: 35px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #515369;
+}
+.header__logo {
+	
+}
+
+/* NAV
+===========*/
+.nav {
+	display: flex;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: opacity .1s linear;
+
+}
+.nav__link {
+	margin-left: 50px;
+	color: #fff;
+	text-decoration: none;
+	opacity: .75;
+}
+
+.nav__link:first-child {
+	margin-left: 0;
+}
+
+.nav__link:hover {
+	color: #F5F700FF;
+	opacity: 1;
+	text-decoration: underline;
+	text-shadow: -1px .5px 1px grey ;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 750px;
+	padding-top: 80px;
+	margin-top: 100px;
+	
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro__title {
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+	font-size: 65px;
+	line-height: 1.1px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.intro__subtitle {
+	font-size: 22px;
+	color: #fff;
+	line-height: 1.5;
+	font-weight: 400;
+	padding: 40px;
+
+}
+
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.works__item {
+}
+
+/* TEAM */
+.team {
+	margin-bottom: 150px;
+}
+
+.team__item {
+	width: 100%;
+
+}
+.team__photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	filter: brightness(100%);
+	
+}
+
+.team__photo:hover{
+	filter: brightness(60%);
+	transition: .2s;
+}
+
+.team__name {
+	margin-bottom: -450px;
+	font-size: 30px;
+	color: #2d3033;
+	text-transform: uppercase;
+	color: #fff;
+	
+}
+
+.team__prof {
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: #e84545
+	text-transform: uppercase;
+}
+
+.team__text {
+	font-size: 12px;
+	font-family: 'Baloo Bhaina 2', cursive;
+	color: white;
+	background-color: #C4FF00FF;
+	filter:background-color brightness(120%);
+	filter: contrast(100%);
+	border-radius: 20px;
+	
+}
+
+p {
+	text-decoration: blink;
+}
+
+/*Menu*/
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 500px;
+	text-align: center;
+	background-color: #FFD900FF;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 25px;
+}
+
+.kof {
+	color: #B0574EFF;
+
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+.menu__name {
+	display: block;
+	max-width: 100%;
+	font-size: 50px;
+	padding-bottom: 150px;
+	font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.menu__name:after {
+	content: "";
+	display: block;
+	width: 140px;
+	height: 3px;
+	background-color: #49E618FF;
+	margin: 0 auto;
+	margin-top: -18px;
+}
+
+.menu__prof {
+	margin-top: -140px;
+	font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.menu__text {
+	font-size: 60px;
+	color: #B0574EFF;
+	text-align: left;
+	margin:0 20px 40px;
+}
+
+
+
+.niv {
+	text-align: left;
+	font-size: 30px;
+}
+
+li:hover {
+	color: #FFD900FF;
+		transition: .2s linear
+
+}
+
+a:hover {
+	color: #5EA955FF;
+	transition: .2s linear
+}
+
+
+.menu__soop {
+	font-size: 50px;
+}
+
+/*WORKS*/
+.works {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.works__item {
+	width: 25%;
+	height: 350px;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	position: relative;
+	overflow: hidden;
+}
+.works__item:hover .works__content {
+	opacity: 1;
+}
+
+.works__photo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(232, 69, 69, .8);
+	opacity: 0;
+	text-align: center;
+	position: absolute;
+	transition: opacity .3s linear;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.works__title {
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	
+}
+
+.works__text {
+	font-size: 14px;
+	color: #fff;
+}
+
+
+.sob {
+	font-family: 'Baloo Bhaina 2', cursive;
+	display: flex;
+	flex-wrap: wrap;
+	height: 800px;
+	width: 1200px;
+	font-size: 70px;
+	margin: 200px;
+	color: #0FEF9DFF;
+	justify-content: center;
+	background: url(https://i7.photo.2gis.com/images/geo/9/1266637420751347_694f.jpg) no-repeat ;
+}
+
+
+.sob__item {
+	display: block;
+	font-size: 40px;
+	margin: 100px;
+	margin-left: -700px;
+	color: #eee;
+}
+
+footer {
+	width: 100%;
+	max-width: 2000px;
+	height: 100px;
+	background-color: #10545BFF;
+	color: #70798EFF;
+	font-size: 40px;
+}
+
+.foot__inner {
+	font-size: 15px;
+	color: #70798EFF;
+}
+
+.footer__logo {
+	text-align: center;
+	margin-top: -55px;
+	padding: 0;
+}
+
+.logo__fot {
+	opacity: .8;
+}
+
+.logo__fot:hover {
+	opacity: 1;
+}
+
+
+
+
+@media (max-width: 1250px) {
+
+	.intro__suptitle {
+		font-size: 52px;
+	}
+
+	.intro__title {
+		font-size: 120px;
+	}
+
+}
+
+
+
+
+
+
